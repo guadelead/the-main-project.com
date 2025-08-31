@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', serif;
+    
+    
+}
+
+
+h1 {
+    
+    font-size: 48px;  
+    
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color:grey;
+    color:black;
+}
+
+.header {
+    padding: 15px;
+    text-align: left;
+    background: #333;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: orange;
+
+}
+
+/*Navigation to style*/
+
+.navigation {
+    overflow: hidden;
+    background-color: orange;
+    padding-left: 33%; 
+}
+
+
+
+.navigation a {
+    font-weight: 700;
+    font-size: 1rem;
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+}
+
+.navigation a:hover {
+    background-color: grey;
+    color: #333;
+
+}
+
+/* .navigation a.active {
+    background-color: orangered;
+    color: whitesmoke;
+    
+    
+} */
+
+.navigation .icon {
+    display: none;
+}
+
+
+input[type=text] {
+    align-self: center;
+    margin-right: 25px;
+    margin-top: 10px;
+    padding: 6px 8px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;   
+}
+
+
+
+.top {
+    
+    
+    background-color: oldlace;
+    padding: 60px 100px;
+    margin: 100px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px black;
+    
+    
+    
+}
+
+
+
+.container {
+    
+    
+    background-color: oldlace;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 100px;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px black;   
+}
+
+.left {
+    
+    margin-right: 50px;
+    flex: 50%;
+    
+    
+    
+}
+
+.right {
+
+    margin-left: 25px;
+    flex: 50%;
+    
+    
+}
+
+.con2 {
+
+    padding: 100px;
+}
+
+figcaption {
+    font-size: .6rem;
+    text-align: center;
+    color: orangered;
+}
+
+h2, h3, h4, h5, h6{
+    
+    
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+    
+
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: darkblue;
+    
+    
+}
+
+
+
+
+.figure {
+   width: 100%;
+}
+img {
+    width: 100%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 0 100px;
+    
+
+}
+.column {
+    
+    background-color: oldlace;
+    /* padding: 50px; */
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px black;
+}
+.card p {
+    padding: 0 25px 25px;
+}
+.card h5 {
+    margin-top: 15px;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.btn {
+    font-size: 1.2em;
+    padding: 14px 20px;
+    display: block;
+    margin: auto;
+    
+
+    margin-top: 15px;
+    background-color: navy;
+    border-radius: 5px;
+   
+    
+    
+    
+}
+
+.btn a {
+    text-decoration: none;
+    color: orange;
+    
+}
+
+
+.btn:hover {
+    background-color:#333;
+    
+    
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: whitesmoke;
+    margin-top: 100px;
+    padding: 100px;
+    
+}
+
+.footer .header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer .header, .copyright {
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+
+@media screen and (max-width: 600px){
+    .navigation a {display: none;}
+    .navigation a.icon {
+        float: right;
+        display: block;
+        /* color: white; */
+    }
+    
+}
+@media screen and (max-width: 600px)
+{
+    .navigation.responsive 
+    {position: relative;}
+    .navigation.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        
+    }
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .container {
+        display: block;
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    .left {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .right {
+        width: 100%;
+        padding-right: 50px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 600px)
+{
+    .row {
+       
+        display: block;
+        margin: 20px;
+        /* padding: 25px; */
+
+        .column {
+        width: 100%;
+        padding: 50px;
+            .card p {
+                padding: 0;
+            }
+        }
+
+    }
+    .row .column:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 600px)
+{
+    .top {
+        margin: 20px;
+        padding: 50px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        
+    }
+}
+@media screen and (max-width: 600px)
+{
+    h3 {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .header {
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            
+        }
+        .subtitle {
+            font-size: 14px;
+            text-align: center;
+
+         }
+    }
+}
+
+
+
+
+
+
+
